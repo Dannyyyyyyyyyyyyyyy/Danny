@@ -1,0 +1,184 @@
+         font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Nanya's Clown Academy 🤡</h1>
+    <p>Where laughter meets professional clownery!</p>
+    <img src="https://i.imgur.com/8QO4VQf.jpeg" alt="Funny clown">
+    <img src="https://i.imgur.com/nKdfwWj.jpeg" alt="Clown 2">
+    <img src="https://i.imgur.com/lW1bArp.jpeg" alt="Clown 3">
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naya the Clown 🤡🎪</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #ffcccb, #ffd700, #ff69b4);
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .clown-images {
+      margin-top: 30px;
+    }
+    img {
+      width: 200px;
+      border-radius: 20px;
+      margin: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #ff4500;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    .joke {
+      margin-top: 20px;
+      font-size: 1.5em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎪 Welcome to Naya the Clown Show 🤡</h1>
+  <p>Get ready to laugh till your sides hurt!</p>
+  <div class="clown-images">
+    <img src="https://i.imgur.com/5vKz3OE.png" alt="Clown 1">
+    <img src="https://i.imgur.com/IWcL9WJ.png" alt="Clown 2">
+    <img src="https://i.imgur.com/jdP02N6.png" alt="Clown 3">
+  </div>
+
+  <button onclick="tellJoke()">Tell me a joke!</button>
+  <p class="joke" id="joke"></p>
+
+  <script>
+    const jokes = [
+      "Why don’t clowns eat fast food? Because they can’t catch it! 🤡",
+      "Naya once tried to juggle water balloons… the audience got a free shower! 💦",
+      "Naya says laughter is contagious, so watch out — she’s patient zero! 😂",
+      "Why did Naya cross the road? To join the circus on the other side! 🎪"
+    ];
+
+    function tellJoke() {
+      const jokeText = document.getElementById("joke");
+      jokeText.innerText = jokes[Math.floor(Math.random() * jokes.length)];
+      jokeText.style.display = "block";
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naya the Clown 🤡🎪</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #ffcccb, #ffd700, #ff69b4);
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .clown-images {
+      margin-top: 30px;
+    }
+    img {
+      width: 200px;
+      border-radius: 20px;
+      margin: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #ff4500;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    .joke {
+      margin-top: 20px;
+      font-size: 1.5em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎪 Welcome to Naya the Clown Show 🤡</h1>
+  <p>Get ready to laugh till your sides hurt!</p>
+<div class="clown-gallery">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Clown_with_balloons.png" alt="Clown 1">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Clown_cartoon.png" alt="Clown 2">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Clown_face.png" alt="Clown 3">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Happy_clown.png" alt="Clown 4">
+</div>
+  <button onclick="tellJoke()">Tell me a joke!</button>
+  <p class="joke" id="joke"></p>
+
+  <script>
+    const jokes = [
+      "Why don’t clowns eat fast food? Because they can’t catch it! 🤡",
+      "Naya once tried to juggle water balloons… the audience got a free shower! 💦",
+      "Naya says laughter is contagious, so watch out — she’s patient zero! 😂",
+      "Why did Naya cross the road? To join the circus on the other side! 🎪"
+    ];
+
+    function tellJoke() {
+      const jokeText = document.getElementById("joke");
+      jokeText.innerText = jokes[Math.floor(Math.random() * jokes.length)];
+      jokeText.style.display = "block";
+    }
+  </script>
+</body>
+</html>
